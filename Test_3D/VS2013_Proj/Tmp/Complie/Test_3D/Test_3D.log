@@ -1,0 +1,14 @@
+﻿生成启动时间为 2014/10/29 16:41:47。
+     1>项目“E:\Code\LWM\Android\workspace\OpenGL\Test_3D\Test_3D\Test_3D.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\Test_3D\Test_3D.exe) does not match the Linker's OutputFile property value (E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Bin\Debug\Test_3D.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Bin\Debug\Test_3D.exe" /INCREMENTAL /NOLOGO /LIBPATH:../VS2013_Proj/lib/Debug /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\Test_3D\Test_3D.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Lib\Debug\(TargetName).lib" /MACHINE:X86 E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\Test_3D\Test_3D.res
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\Test_3D\stdafx.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\Test_3D\Test_3D.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\Test_3D\Test_3DDlg.obj
+         Test_3D.vcxproj -> E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\Test_3D\Test_3D.exe
+     1>已完成生成项目“E:\Code\LWM\Android\workspace\OpenGL\Test_3D\Test_3D\Test_3D.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.43

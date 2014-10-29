@@ -1,0 +1,42 @@
+﻿生成启动时间为 2014/10/29 16:41:42。
+     1>项目“E:\Code\LWM\Android\workspace\OpenGL\MyOpenGL\MyOpenGL.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../jni/Engine /I../jni/Engine/glm /IDependencies/include /I../jni/Engine/BaseCode /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GRAPHIC_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\\" /Fd"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  /D _CRT_SECURE_NO_WARNINGS ..\jni\Engine\GameManager.cpp
+         GameManager.cpp
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\inputmanager.h(40): warning C4251: “InputManager::_handle”: class“fastdelegate::FastDelegate2<MouseType,MousePos,fastdelegate::detail::DefaultVoid>”需要有 dll 接口由 class“InputManager”的客户端使用
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\inputmanager.h(46): warning C4251: “InputManager::mouseLast”: class“MousePos”需要有 dll 接口由 class“InputManager”的客户端使用
+                 e:\code\lwm\android\workspace\opengl\jni\engine\inputmanager.h(16) : 参见“MousePos”的声明
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\scrolrect.h(17): warning C4251: “ScrolRect::m_Rectangle”: class“CMyRect”需要有 dll 接口由 class“ScrolRect”的客户端使用
+                 e:\code\lwm\android\workspace\opengl\jni\engine\basecode\p3types.h(7) : 参见“CMyRect”的声明
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\scrolrect.h(18): warning C4251: “ScrolRect::pageRect”: class“CMyRect”需要有 dll 接口由 class“ScrolRect”的客户端使用
+                 e:\code\lwm\android\workspace\opengl\jni\engine\basecode\p3types.h(7) : 参见“CMyRect”的声明
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\scrolrect.h(19): warning C4251: “ScrolRect::showRect”: class“CMyRectTracker”需要有 dll 接口由 class“ScrolRect”的客户端使用
+                 e:\code\lwm\android\workspace\opengl\jni\engine\basecode\p3types.h(88) : 参见“CMyRectTracker”的声明
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\scrolrect.h(20): warning C4251: “ScrolRect::horizontalRect”: class“CMyRectTracker”需要有 dll 接口由 class“ScrolRect”的客户端使用
+                 e:\code\lwm\android\workspace\opengl\jni\engine\basecode\p3types.h(88) : 参见“CMyRectTracker”的声明
+     1>e:\code\lwm\android\workspace\opengl\jni\engine\texturemgr.h(34): warning C4251: “TextureMgr::m_Textures”: class“std::map<std::string,CTexture *,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”需要有 dll 接口由 class“TextureMgr”的客户端使用
+                 with
+                 [
+                     _Kty=std::string
+         ,            _Ty=CTexture *
+                 ]
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\MyOpenGL\MyOpenGL.dll) does not match the Linker's OutputFile property value (E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Bin\Debug\MyOpenGL.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Bin\Debug\MyOpenGL.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\MyOpenGL\MyOpenGL.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Lib\Debug\MyOpenGL.lib" /MACHINE:X86 /DLL E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\GameManager.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\glMeshFactory.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\glRenderer.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\glShaderFactory.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\InputManager.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\OpenGLEngine.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\p3type.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\ScrolRect.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\Texture.obj
+         E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\TextureMgr.obj
+            正在创建库 E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Lib\Debug\MyOpenGL.lib 和对象 E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Lib\Debug\MyOpenGL.exp
+     1>GLEW_190.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“GLEW_190.lib(glew.obj)”或在“E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\MyOpenGL\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         MyOpenGL.vcxproj -> E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\MyOpenGL\MyOpenGL.dll
+     1>已完成生成项目“E:\Code\LWM\Android\workspace\OpenGL\MyOpenGL\MyOpenGL.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.74
