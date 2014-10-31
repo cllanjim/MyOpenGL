@@ -18,7 +18,7 @@ glShaderFactory::~glShaderFactory()
 
 GLuint glShaderFactory::complieShader(GLenum type, const char* shaderSrc)
 {
-	std::string path1 = "/mnt/sdcard/Android/111/log.txt";
+	std::string path1 = "/mnt/sdcard/Android/data/com.example.opengl/Data/log.txt";
 #ifndef  _WIN32
 
 #else
@@ -45,7 +45,7 @@ GLuint glShaderFactory::complieShader(GLenum type, const char* shaderSrc)
 		glDeleteShader(shader);
 		return 0;
 	}
-	path1 = "/mnt/sdcard/Android/111/good.txt";
+	path1 = "/mnt/sdcard/Android/data/com.example.opengl/Data/good.txt";
 
 #ifndef  _WIN32
 
@@ -63,7 +63,7 @@ GLuint glShaderFactory::complieShader(GLenum type, const char* shaderSrc)
 
 GLuint glShaderFactory::LoadShaders(const char * vertex_file_path, const char * fragment_file_path, bool bTexture)
 {
-	std::string path = "/mnt/sdcard/Android/111/";
+	std::string path = "/mnt/sdcard/Android/data/com.example.opengl/Data/";
 #ifndef  _WIN32
 	path += vertex_file_path;
 #else
@@ -87,7 +87,7 @@ GLuint glShaderFactory::LoadShaders(const char * vertex_file_path, const char * 
 		return 0;
 	}
 
-	path = "/mnt/sdcard/Android/111/";
+	path = "/mnt/sdcard/Android/data/com.example.opengl/Data/";
 
 #ifndef  _WIN32
 	path += fragment_file_path;

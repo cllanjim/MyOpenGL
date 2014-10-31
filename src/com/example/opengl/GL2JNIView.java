@@ -9,5 +9,6 @@ public class GL2JNIView extends GLSurfaceView {
 		// TODO Auto-generated constructor stub
 		setEGLContextClientVersion(2);
 		setRenderer(new NdkGlRender());
+
 	}
 }

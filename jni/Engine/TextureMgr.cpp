@@ -75,7 +75,7 @@ CTexture* TextureMgr::CreateTextureFormFile(const char* strFileName)
 {
 	// Generate a new image Id and bind it with the
 	// current image.
-	std::string filePath = "/mnt/sdcard/Android/111/";
+	std::string filePath = "/mnt/sdcard/Android/data/com.example.opengl/Data/";
 #ifndef  _WIN32
 	filePath += strFileName;
 #else

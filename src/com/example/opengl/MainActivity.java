@@ -26,7 +26,12 @@ public class MainActivity extends ActionBarActivity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		writeToSDcardFile("1.txt","/Android/data/com.example.opengl","read");
+		FileUtils._Assets = this.getAssets();
+		if(FileUtils.IsFiles())
+		{
+			FileUtils.CopyAssets("","mnt/sdcard/Android/data/com.example.opengl/");
+		}
+		//writeToSDcardFile("1.txt","/Android/data/com.example.opengl","read");
 		surface = new GL2JNIView(this);
 		setContentView(surface);
 		
