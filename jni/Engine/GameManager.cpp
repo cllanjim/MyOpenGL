@@ -39,14 +39,21 @@ void GameManager::Process()
 		pSrcTmp.top = 0;
 		pSrcTmp.bottom = pTexture->m_nHeight;
 	}
-	g_objRender.DrawCube(0);
+	
 	g_objRender.ShowTextureEx(10, 400, &pSrcTmp, 300, 300, pTexture, 0.0f);
 	g_objRender.ShowRectEx(0, 0, 100, 100, DX_SCREEN_COLOR(1, 1, 0));
 	pScrolRect->Process();
+	g_objRender.DrawCube(X,Y);
 	g_objBase.End();
 }
 
 void GameManager::MouseEven(MouseType nType, MousePos pos)
 {
 	pScrolRect->MouseEven(nType, pos);
+	if (nType == MouseMove)
+	{
+		X += pos.X;
+		Y += pos.Y;
+	}
+
 }

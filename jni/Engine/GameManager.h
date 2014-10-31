@@ -12,6 +12,8 @@ public:
 	GameManager();
 	~GameManager();
 	ScrolRect* pScrolRect;
+	float X = 0.0f;
+	float Y = 0.0f;
 };
 
 #define  g_objGameManager GameManager::GetInstance()

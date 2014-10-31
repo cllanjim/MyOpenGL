@@ -219,8 +219,7 @@ void glRenderer::ShowRectEx(int x1, int y1, int x2, int y2, DX_SCREEN_COLOR _col
 	
 }
 
-
-void glRenderer::InitReSource()
+void glRenderer::InitShader()
 {
 	glShaderFactory factory;
 	//programObj = factory.LoadShaders("shader\\base.vs", "shader\\base.ps");
@@ -228,6 +227,10 @@ void glRenderer::InitReSource()
 
 	programObj = factory.LoadShaders("base.vs", "base.ps");
 	programTextureObj = factory.LoadShaders("baseTexture.vs", "baseTexture.ps");
+}
+void glRenderer::InitReSource()
+{
+	InitShader();
 	float triColor[150 * 3];
 	triColor[0] = 0;    triColor[1] = 1;    triColor[2] = 0;
 	triColor[3] = 0;    triColor[4] = 1;    triColor[5] = 0;
@@ -436,7 +439,7 @@ void glRenderer::DrawCircleEx(int nX, int nY, int nRadius, DX_SCREEN_COLOR _colo
 	glDrawArrays(GL_LINE_LOOP, 0, 50);
 }
 
-void glRenderer::DrawCube(int n)
+void glRenderer::DrawCube(float x,float y)
 {
 
 	glm::mat4 Projection = glm::perspectiveFov(45.0f, (float)g_objBase.m_nWidth, (float)g_objBase.m_nHeight, 0.1f, 100.0f);
@@ -447,18 +450,25 @@ void glRenderer::DrawCube(int n)
 		glm::vec3(0, 0, 0), // and looks at the origin
 		glm::vec3(0, 1, 0)  // Head is up (set to 0,-1,0 to look upside-down)
 		);
+	static float rotateX = 0.0f;
+	static float rotateY = 0.0f;
+	rotateX++;
+//	rotateX = 0.0f;
+	//rotateY = 0.0f;
+	View = View* glm::yawPitchRoll(x*3.141592635f / 180.0f, -y*3.141592635f / 180.0f, 0.0f);
+	//View = glm::rotate(View, n, glm::vec3(0.0f, 1.0f, 0.0f));
 	// Model matrix : an identity matrix (model will be at the origin)
 	glm::mat4 Model = glm::mat4(1.0f);  // Changes for each model !
-	static float rotateY = 0.0f;
+	
 
-	if (n == 0)
+	/*if (x == 0)
 	{
 		Model = glm::translate(Model, glm::vec3(0.0, 0.0, 0.0));
 	}
 	else
 	{
 		Model = glm::translate(Model, glm::vec3(1.0, -1.0, 0.5));
-	}
+	}*/
 
 
 	//	Model = glm::rotate(Model, rotateY, glm::vec3(1.0f, 0.0f, 0.0f));
@@ -547,10 +557,11 @@ void glRenderer::ShowTexture(int x1, int y1, int x2, int y2, GLuint TextureId)
 	glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
 
 
-	GLuint gTexID = glGetUniformLocation(programTextureObj, "gTex");
+	
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, TextureId);
+	GLuint gTexID = glGetUniformLocation(programTextureObj, "gTex");
 	glUniform1i(gTexID, 0);
 	//LOGD("%d,%d,%d",MatrixID,gTexID,TextureId);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);

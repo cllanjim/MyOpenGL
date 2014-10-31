@@ -44,6 +44,7 @@ private:
 
 private:
 	MousePos mouseLast;
+	bool bMouseMove = false;
 	
 };
 #define g_ojbInputManager InputManager::GetInstance()

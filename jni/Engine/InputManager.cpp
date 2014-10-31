@@ -27,12 +27,14 @@ void InputManager::MouseEven(MouseType nType, MousePos pos)
 	{
 					  mouseLast.X = pos.X;
 					  mouseLast.Y = pos.Y;
+					  bMouseMove = true;
 	}
 		break;
 	case MouseUp:
 	{
 					mouseLast.X = pos.X;
 					mouseLast.Y = pos.Y;
+					bMouseMove = false;
 	}
 		break;
 	case MouseDClick:
@@ -43,12 +45,20 @@ void InputManager::MouseEven(MouseType nType, MousePos pos)
 		break;
 	case MouseMove:
 	{
-					  MousePos _tmp(pos.X, pos.Y);
-					  pos.X -= mouseLast.X;
-					  pos.Y -= mouseLast.Y;
+					  if (bMouseMove)
+					  {
+						  MousePos _tmp(pos.X, pos.Y);
+						  pos.X -= mouseLast.X;
+						  pos.Y -= mouseLast.Y;
 
-					  mouseLast.X = _tmp.X;
-					  mouseLast.Y = _tmp.Y;
+						  mouseLast.X = _tmp.X;
+						  mouseLast.Y = _tmp.Y;
+					  }
+					  else
+					  {
+						  return;
+					  }
+	
 	}
 		break;
 	case MouseWheel:

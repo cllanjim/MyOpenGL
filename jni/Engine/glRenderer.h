@@ -115,7 +115,7 @@ public:
 	void ShowRectEx(int x1, int y1, int x2, int y2, DX_SCREEN_COLOR _color = DX_SCREEN_COLOR(1, 1, 1), float fRotate = 0.0f, float fScaleX = 1.0f, float fScaleY = 1.0f);
 	void DrawCircle(int nX, int nY, int nRadius, DX_SCREEN_COLOR _color = DX_SCREEN_COLOR(1, 1, 1), float fRotate = 0.0f);
 	void DrawCircleEx(int nX, int nY, int nRadius, DX_SCREEN_COLOR _color = DX_SCREEN_COLOR(1, 1, 1), float fRotate = 0.0f);
-	void DrawCube(int n = 0);
+	void DrawCube(float x = 0,float y = 0);
 
 	void ShowTexture(int x1, int y1, int x2, int y2, GLuint  TextureId);
 	void ShowTexture(int x1, int y1, CTexture* pTexture);
@@ -124,10 +124,12 @@ public:
 	void ShowTextureEx(int x, int y, RECT *pSrc, int nWidth, int nHeight, CTexture*pTexture, glm::mat4 Model = glm::mat4(1.0f));
 
 	void ShowTexture(int x, int y, RECT *pSrc, int nWidth, int nHeight, CTexture*pTexture, glm::mat4 Model = glm::mat4(1.0f));
+	void InitShader();
+	void InitReSource();
 private:
 	glRenderer();
 	~glRenderer();
-	void InitReSource();
+
 	GLuint programObj;
 	GLuint vertexbuffer;
 	GLuint indexbuffer;

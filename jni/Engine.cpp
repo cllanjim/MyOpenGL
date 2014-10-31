@@ -26,6 +26,9 @@ void Java_com_example_opengl_RelayNative_onNdkSurfaceChanged(JNIEnv * env,
 		jobject jobj, jint width, jint height)
 
 		{
+	LOGI_D("hello init");
+	g_objRender.InitShader();
+	g_objRender.InitReSource();
 	g_objBase.Initialize(width, height);
 }
 
