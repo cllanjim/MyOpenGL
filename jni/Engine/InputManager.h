@@ -27,6 +27,7 @@ public:
 		X = x;
 		Y = y;
 	}
+
 };
 
 typedef FastDelegate2<MouseType, MousePos> MouseEvenHandle;
@@ -44,7 +45,7 @@ private:
 
 private:
 	MousePos mouseLast;
-	bool bMouseMove = false;
+	bool bMouseMove;
 	
 };
 #define g_ojbInputManager InputManager::GetInstance()

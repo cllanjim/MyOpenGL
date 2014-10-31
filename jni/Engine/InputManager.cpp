@@ -3,6 +3,7 @@
 
 InputManager::InputManager()
 {
+	bMouseMove = false;
 	//g_ojbInputManager._handle.bind(&GameManager::GetInstance(), &GameManager::MouseEven);
 }
 

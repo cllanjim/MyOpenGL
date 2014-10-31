@@ -1,24 +1,9 @@
-﻿生成启动时间为 2014/10/31 17:13:17。
+﻿生成启动时间为 2014/10/31 17:37:13。
      1>项目“E:\Code\LWM\Android\workspace\OpenGL\MyOpenGL\MyOpenGL.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../jni/Engine /I../jni/Engine/glm /IDependencies/include /I../jni/Engine/BaseCode /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GRAPHIC_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\\" /Fd"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  /D _CRT_SECURE_NO_WARNINGS ..\jni\Engine\glRenderer.cpp
-         glRenderer.cpp
+         D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../jni/Engine /I../jni/Engine/glm /IDependencies/include /I../jni/Engine/BaseCode /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D GRAPHIC_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\\" /Fd"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt  /D _CRT_SECURE_NO_WARNINGS ..\jni\Engine\OpenGLEngine.cpp
+         OpenGLEngine.cpp
      1>e:\code\lwm\android\workspace\opengl\jni\engine\glenums.h(46): warning C4309: “初始化”: 截断常量值
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(145): warning C4244: “参数”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(146): warning C4244: “参数”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(147): warning C4244: “参数”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(148): warning C4244: “参数”: 从“int”转换到“GLfloat”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(542): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(543): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(544): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(545): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(637): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(638): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(639): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-     1>e:\code\lwm\android\workspace\opengl\jni\engine\glrenderer.cpp(640): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-         GLM: perspective function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
-         GLM: rotate function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
-         GLM: perspectiveFov function taking degrees as a parameter is deprecated. #define GLM_FORCE_RADIANS before including GLM headers to remove this message.
      1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\MyOpenGL\MyOpenGL.dll) does not match the Linker's OutputFile property value (E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Bin\Debug\MyOpenGL.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
        Link:
          D:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Bin\Debug\MyOpenGL.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Link\MyOpenGL\MyOpenGL.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Lib\Debug\MyOpenGL.lib" /MACHINE:X86 /DLL E:\Code\LWM\Android\workspace\OpenGL\Test_3D\VS2013_Proj\Tmp\Complie\MyOpenGL\GameManager.obj
@@ -36,4 +21,4 @@
 
 生成成功。
 
-已用时间 00:00:02.68
+已用时间 00:00:03.42

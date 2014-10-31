@@ -15,6 +15,8 @@ GameManager::GameManager()
 
 GameManager::~GameManager()
 {
+	 X = 0.0f;
+	 Y = 0.0f;
 }
 
 GameManager& GameManager::GetInstance()

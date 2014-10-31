@@ -108,6 +108,14 @@ void OpenGLEngine::Begin()
 	color[3] = 1.0f;
 	glClearColor(color[0], color[1], color[2], color[3]);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);	// Clear The Screen And The Depth Buffer
+	
+	for (int i = 0; i < 1000; i++)
+	{
+		GLuint texture ;
+		glGenTextures(1, &texture);					// Create Three Textures
+		glBindTexture(GL_TEXTURE_2D, texture);
+	}
+
 
 }
 
